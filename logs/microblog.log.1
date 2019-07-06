@@ -1,0 +1,105 @@
+2019-04-01 20:26:08,469 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
+2019-04-01 20:27:48,786 ERROR: Exception on /reset_password_request [POST] [in c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Linford Hao\microblog\app\routes.py", line 219, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\Linford Hao\microblog\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.txt
+2019-04-01 20:36:32,496 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
+2019-04-01 20:36:51,763 ERROR: Exception on /reset_password_request [POST] [in c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Linford Hao\microblog\app\routes.py", line 211, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\Linford Hao\microblog\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.txt
+2019-04-01 20:38:08,414 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
+2019-04-01 20:40:12,399 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
+2019-04-01 20:40:23,839 ERROR: Exception on /reset_password_request [POST] [in c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\Linford Hao\microblog\app\routes.py", line 211, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\Linford Hao\microblog\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\users\linfor~1\virtua~1\linfor~1\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.txt
+2019-04-01 20:47:32,900 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
+2019-04-01 20:47:47,768 INFO: Microblog startup [in C:\Users\Linford Hao\microblog\app\__init__.py:71]
